@@ -7,11 +7,11 @@ body {
 }
 
 .layout_padding {
-  padding: 90px 0;
+  padding: px 0;
 }
 
 .layout_padding2 {
-  padding: 75px 0;
+  padding: px 0;
 }
 
 .layout_padding2-top {
@@ -100,6 +100,12 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media (max-width: 767px) {
+  .hero_area {
+    min-height: 80vh;
+    background-color: lightcoral; /* Temporary color for testing */
+  }
 }
 
 .bg-box {
@@ -508,11 +514,15 @@ a:focus {
   background-color: #ffffff;
   border-radius: 10px;
   color: #ffffff;
-  border-radius: 15px;
+  border-radius: 5px;
   overflow: hidden;
   background: linear-gradient(to bottom, #f1f2f3 25px, #222831 25px);
+  transition: box-shadow 0.3s ease; /* Adding a smooth transition for the hover effect */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 }
-
+.food_section .box:hover {
+  box-shadow: 0px 8px 16px rgba(54, 54, 54, 0.7); /* New box shadow values on hover */
+}
 .food_section .box .img-box {
   background: #f1f2f3;
   display: -webkit-box;
@@ -525,7 +535,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   height: 215px;
-  border-radius: 0 0 0 45px;
+  border-radius: 0 0 0 20px;
   margin: -1px;
   padding: 25px;
 }
@@ -637,7 +647,7 @@ a:focus {
 
 .about_section .img-box img {
   width: 100%;
-  max-width: 445px;
+  max-width: 500px;
   position: relative;
   z-index: 2;
 }
@@ -662,82 +672,10 @@ a:focus {
   background-color: #e69c00;
 }
 
-.book_section {
-  position: relative;
-}
-
-.book_section .heading_container {
-  margin-bottom: 25px;
-}
-
-.book_section .form_container .form-control {
-  width: 100%;
-  border: none;
-  height: 50px;
-  margin-bottom: 25px;
-  padding-left: 25px;
-  border: 1px solid #999;
-  outline: none;
-  color: #000000;
-  border-radius: 5px;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.book_section .form_container .form-control::-webkit-input-placeholder {
-  color: #222222;
-}
-
-.book_section .form_container .form-control:-ms-input-placeholder {
-  color: #222222;
-}
-
-.book_section .form_container .form-control::-ms-input-placeholder {
-  color: #222222;
-}
-
-.book_section .form_container .form-control::placeholder {
-  color: #222222;
-}
-
-.book_section .form_container .nice-select .current {
-  font-size: 16px;
-}
-
-.book_section .form_container button {
-  margin-top: 15px;
-  border: none;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 10px 55px;
-  background-color: #ffbe33;
-  color: #ffffff;
-  border-radius: 45px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: none;
-}
-
-.book_section .form_container button:hover {
-  background-color: #e69c00;
-}
-
-.book_section .map_container {
-  width: 100%;
-  height: 345px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.book_section .map_container #googleMap {
-  height: 100%;
-  min-height: 100%;
-  width: 100%;
-}
-
+.
 /* client section start */
 .client_section .heading_container {
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
