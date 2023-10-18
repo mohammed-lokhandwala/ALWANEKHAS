@@ -6,6 +6,11 @@
   .hero_area {
     min-height: auto;
   }
+  .food_section .box .img-box img {
+  
+    max-height: 250px;
+    
+  }
 
 .about_section{
   flex-direction: column-reverse;
