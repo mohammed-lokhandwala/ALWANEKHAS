@@ -101,12 +101,7 @@ a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media (max-width: 767px) {
-  .hero_area {
-    min-height: 80vh;
-    background-color: lightcoral; /* Temporary color for testing */
-  }
-}
+
 
 .bg-box {
   position: absolute;
@@ -524,6 +519,7 @@ a:focus {
   box-shadow: 0px 8px 16px rgba(54, 54, 54, 0.7); /* New box shadow values on hover */
 }
 .food_section .box .img-box {
+  position: relative;
   background: #f1f2f3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,15 +530,19 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 215px;
+  height: 100%;
+  padding: 5px;
+
   border-radius: 0 0 0 20px;
-  margin: -1px;
-  padding: 25px;
+  
+  
 }
 
 .food_section .box .img-box img {
-  max-width: 100%;
-  max-height: 145px;
+  border-radius: 0 0 0 20px;
+  object-fit:cover;
+  width: 100%;
+  max-height: 200px;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -625,14 +625,17 @@ a:focus {
 }
 
 .about_section {
+  padding: 30px;
   background: #222831;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .about_section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          
 }
 
 .about_section .img-box {
