@@ -15,6 +15,8 @@
     #services {
       padding: 150px 0;
     }
+
+    
   }
   
   @media (min-width: 992px) {
@@ -27,22 +29,17 @@
     }
   }
   .about_section {
+
     padding: 50px;
   }
-  .about_section .img-box {
- 
-    display: hidden;
-    overflow: hidden;
-  }
-  .about_section .img{
-    display: none;
-  }
+  
+  
   .service-box {
     
     padding: 20px;
     text-align: center;
     margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    box-shadow: 0 4px 8px rgba(0.1, 0, 0, 0.1); /* Add box shadow */
   }
 
   
